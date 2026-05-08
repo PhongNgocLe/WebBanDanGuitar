@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Biệt Guitar Electric và Acoustic - Guitar Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .blog-header {
+            /* Ảnh nền Rock & Ballad */
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519508234439-4f23643125c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .content-img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .sidebar-card {
+            position: sticky;
+            top: 20px;
+        }
+        .comparison-table th {
+            background-color: #e9ecef;
+            width: 33%;
+        }
+        .vs-badge {
+            background-color: #dc3545;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GUITAR SHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.php">Trang chủ</a></li>
+                     <li class="nav-item"><a class="nav-link active" href="/Blog.php">Blog</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Electric Guitar <span class="vs-badge">VS</span> Acoustic Guitar</h1>
+            <p class="lead">Bạn thuộc team "Rock bùng nổ" hay "Ballad nhẹ nhàng"? Hãy chọn đúng cây đàn cho mình.</p>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="bg-white p-4 rounded shadow-sm">
+                    <p class="lead">Việc lựa chọn cây đàn đầu tiên luôn là nỗi băn khoăn lớn nhất của người mới tập. Chọn sai loại đàn có thể khiến bạn nản chí vì không chơi được dòng nhạc mình thích. Bài viết này sẽ giúp bạn phân biệt rõ ràng hai loại đàn phổ biến nhất.</p>
+                    
+                    <hr>
+
+                    <h3 class="mt-4 text-warning"><i class="fas fa-guitar me-2"></i>1. Guitar Acoustic (Đàn thùng)</h3>
+                    <p>Guitar Acoustic là loại đàn có thùng rỗng, âm thanh được tạo ra nhờ sự cộng hưởng tự nhiên trong thùng đàn mà không cần thiết bị điện tử hỗ trợ.</p>
+                    
+                    <ul>
+                        <li><strong>Đặc điểm:</strong> Thùng đàn dày, dây đàn thường làm bằng kim loại (dây sắt).</li>
+                        <li><strong>Âm thanh:</strong> Vang, sáng, mộc mạc và tự nhiên.</li>
+                        <li><strong>Phù hợp:</strong> Đệm hát, Fingerstyle, Pop, Ballad, Country.</li>
+                    </ul>
+                    <img src="/images/690e266eacf50-Đàn Guitar Acoustic Epiphone DR-100 Natural.png" alt="Đàn Acoustic" class="content-img">
+
+                    <h3 class="mt-4 text-danger"><i class="fas fa-bolt me-2"></i>2. Guitar Electric (Đàn điện)</h3>
+                    <p>Guitar điện thường có thân đặc (solid body). Âm thanh của dây đàn được thu lại bởi các Pickups (bộ phận thu âm) và truyền qua dây cáp đến loa (Amply) để phát ra tiếng.</p>
+                    
+                    <ul>
+                        <li><strong>Đặc điểm:</strong> Thân đàn mỏng, nặng, cần đàn nhỏ gọn, dây mềm hơn Acoustic.</li>
+                        <li><strong>Âm thanh:</strong> Đa dạng tùy chỉnh (Clean, Distortion, Overdrive...). Có thể kéo dài âm (sustain) rất lâu.</li>
+                        <li><strong>Phù hợp:</strong> Rock, Metal, Blues, Jazz, Funk.</li>
+                    </ul>
+                    
+
+
+                    <img src="/images/6944ecb2830cd-Fender-guitar-1000x1000-600x600.jpg" alt="Đàn Electric" class="content-img">
+
+                    <h3 class="mt-5 mb-3">Bảng so sánh chi tiết</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered comparison-table">
+                            <thead class="table-dark text-center">
+                                <tr>
+                                    <th>Tiêu chí</th>
+                                    <th>Acoustic Guitar</th>
+                                    <th>Electric Guitar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Cảm giác tay</strong></td>
+                                    <td>Dây cứng hơn, cần lực bấm mạnh hơn, dễ đau tay khi mới tập.</td>
+                                    <td>Dây mềm, cần đàn nhỏ, bấm nhẹ nhàng hơn.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Thiết bị đi kèm</strong></td>
+                                    <td>Chỉ cần đàn là chơi được ngay. Tiện lợi mang đi du lịch.</td>
+                                    <td>Cần phải có Amply (loa) và dây cáp mới nghe được tiếng.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Chi phí đầu tư</strong></td>
+                                    <td>Rẻ hơn (chỉ cần mua đàn).</td>
+                                    <td>Cao hơn (Mua đàn + Amply + Dây cáp).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dòng nhạc</strong></td>
+                                    <td>Nhạc nhẹ, đệm hát vui vẻ.</td>
+                                    <td>Biểu diễn band nhạc, solo, nhạc mạnh.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="mt-4">Lời khuyên cho người mới</h3>
+                    <p>Nếu bạn thích sự tiện lợi, muốn mang đàn đi giao lưu bạn bè, cắm trại và thích hát hò: <strong>Hãy chọn Acoustic.</strong></p>
+                    <p>Nếu bạn đam mê những cú Solo "xé gió", thích âm thanh mạnh mẽ của Rock hoặc sự quyến rũ của Blues/Jazz: <strong>Hãy chọn Electric.</strong></p>
+
+                </article>
+
+                
+            </div>
+
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Guitar Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

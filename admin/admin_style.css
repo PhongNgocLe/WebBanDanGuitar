@@ -1,0 +1,133 @@
+/* ============================
+   CSS Variables (Biến)
+============================ */
+:root {
+    --sidebar-bg: #343a40;
+    --sidebar-text: #c2c7d0;
+    --sidebar-active-bg: #495057;
+    --sidebar-active-text: #ffffff;
+    --content-bg: #f8f9fa;
+    --content-text: #212529;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+/*=========================
+   Chung
+============================ */
+body {
+    background-color: var(--content-bg); /* Dùng biến */
+    color: var(--content-text); /* Dùng biến */
+    font-size: 0.9rem;
+}
+
+/* ============================
+   Sidebar (Menu bên trái)
+============================ */
+.sidebar {
+    background: var(--sidebar-bg); /* Dùng biến */
+    min-height: 100vh;
+}
+
+.sidebar-heading {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar .nav-link {
+    color: var(--sidebar-text); /* Dùng biến */
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin: 2px 0;
+}
+
+.sidebar .nav-link .fa-fw {
+    width: 1.25em;
+    margin-right: 0.25rem;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: var(--sidebar-active-text); /* Dùng biến */
+    background-color: var(--sidebar-active-bg); /* Dùng biến */
+}
+
+.sidebar .nav-link.active {
+    font-weight: 700;
+}
+
+.sidebar hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================
+   Nội dung chính (Main Content)
+============================ */
+main {
+    padding-top: 1.5rem;
+}
+
+/* Tiêu đề của trang (vd: Dashboard, Quản lý SP) */
+.main-header {
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color); /* Dùng biến */
+}
+
+/* Căn chỉnh các nút hành động (Thêm/Sửa/Xóa) */
+.action-buttons a,
+.action-buttons button { /* Thêm button vào đây */
+    min-width: 80px; 
+    margin-bottom: 5px; 
+}
+/* Thêm style cho form xóa mới */
+.action-buttons form {
+    margin: 0;
+}
+
+
+/* Cải thiện bảng */
+.table {
+    background-color: var(--card-bg); /* Dùng biến */
+    border-radius: 0.25rem;
+    box-shadow: var(--shadow-sm); /* Dùng biến */
+}
+
+.table thead th {
+    border-bottom-width: 1px;
+}
+
+/* Cải thiện Form */
+form {
+    background: var(--card-bg); /* Dùng biến */
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: var(--shadow-sm); /* Dùng biến */
+}
+/* Reset style cho form xóa trong bảng */
+.table form {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+
+/* Dashboard Cards */
+.card-admin {
+    border: none;
+    box-shadow: var(--shadow-sm); /* Dùng biến */
+    transition: transform 0.2s ease;
+}
+.card-admin:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Shadow lớn hơn khi hover */
+}
+.card-admin .card-footer {
+    background: rgba(0,0,0,0.05);
+}
+.card-admin .card-footer a {
+    text-decoration: none;
+}

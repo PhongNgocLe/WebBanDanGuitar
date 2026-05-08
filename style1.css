@@ -1,0 +1,146 @@
+/* * CSS/style-auth.css 
+ * File CSS mới dành riêng cho trang Đăng nhập / Đăng ký
+ */
+
+/* 1. Cài đặt cơ bản */
+html, body {
+    height: 100%; /* Rất quan trọng: cho phép căn giữa theo chiều dọc */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 254, 243);
+}
+
+/* 2. Kỹ thuật căn giữa màn hình (Flexbox) */
+body {
+    display: flex;
+    justify-content: center;  /* Căn giữa theo chiều ngang */
+    align-items: center;    /* Căn giữa theo chiều dọc */
+}
+
+/* 3. Hộp chứa form */
+.auth-container {
+    width: 90%; /* Chiếm 90% trên mobile */
+    max-width: 420px; /* Chiều rộng tối đa trên PC */
+    padding: 30px;
+    background-color: rgb(253, 250, 250);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* 4. Link Quay Lại */
+.back-link {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.back-link:hover {
+    color: rgb(173, 157, 78);
+}
+
+/* 5. Logo và Tiêu đề */
+.auth-logo img {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.auth-title h2 {
+    color: rgb(173, 157, 78);
+    font-size: 1.5rem;
+    margin: 0;
+}
+.auth-title h3 {
+    color: rgb(173, 157, 78);
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* 6. Form và các trường input */
+.auth-form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* Bắt buộc phải có để width 100% không bị tràn */
+    box-sizing: border-box; 
+    font-size: 1rem;
+}
+
+/* 7. Checkbox "Hiển thị mật khẩu" */
+.password-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Khoảng cách giữa checkbox và chữ */
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.password-toggle input[type="checkbox"] {
+    width: auto; /* Ghi đè style cũ của bạn */
+    height: auto;
+}
+
+/* 8. Nút bấm */
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(173, 157, 78);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+.auth-button:hover {
+    background-color: rgb(140, 125, 60);
+}
+
+/* 9. Link chuyển đổi (Đăng ký / Đăng nhập) */
+.auth-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.auth-link a {
+    color: rgb(173, 157, 78);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 10. Thông báo lỗi (PHP) */
+.error-message {
+    background-color: #e8a3a3;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #f5c6cb;
+}
