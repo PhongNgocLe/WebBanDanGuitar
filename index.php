@@ -42,7 +42,6 @@ $top_categories = get_all_categories();
     </div>
 </section>
 <?php endif; ?>
-
 <section id="featuredProducts" class="product-grid">
     <div class="content-head">
         <h2>SẢN PHẨM MỚI</h2>
