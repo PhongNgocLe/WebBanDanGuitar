@@ -74,7 +74,7 @@ $top_categories = get_all_categories();
                             <?php endif; ?>
                         </p>
                         <a href="cart-handler.php?action=add&id=<?php echo $product['id']; ?>" class="btn add-to-cart-btn">
-                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
                         </a>
                     </div>
                 </div>
